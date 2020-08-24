@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Course {
     private String teacherName;
     private String subject;
-    private ArrayList Student;
+    private ArrayList Student = new ArrayList();
 
     public Course(String teacherName, String subject, ArrayList student) {
         this.teacherName = teacherName;
