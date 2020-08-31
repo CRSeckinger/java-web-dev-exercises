@@ -6,12 +6,12 @@ import java.util.ArrayList;
 public class Course {
     private String teacherName;
     private String subject;
-    private ArrayList Student = new ArrayList();
+    private ArrayList<Student> roster;
 
-    public Course(String teacherName, String subject, ArrayList student) {
+    public Course(String teacherName, String subject) {
         this.teacherName = teacherName;
         this.subject = subject;
-        Student = student;
+        this.roster = new ArrayList<>(); //empty ArrayList
     }
 
     public String getTeacherName() {
@@ -30,11 +30,5 @@ public class Course {
         this.subject = subject;
     }
 
-    public ArrayList getStudent() {
-        return Student;
-    }
 
-    public void setStudent(ArrayList student) {
-        Student = student;
-    }
 }
